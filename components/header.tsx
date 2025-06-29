@@ -23,10 +23,10 @@ const navigationLinks = [
 
 export function Header() {
   return (
-    <header className="border-b px-4 md:px-6">
-      <div className="flex h-16 items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 px-4 bg-gray-50 border-b md:px-6">
+      <div className="flex gap-4 justify-between items-center mx-auto max-w-5xl h-16">
         {/* Left side */}
-        <div className="flex items-center gap-2">
+        <div className="flex gap-2 items-center">
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
@@ -62,9 +62,9 @@ export function Header() {
                 </svg>
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-36 p-1 md:hidden">
+            <PopoverContent align="start" className="p-1 w-36 md:hidden">
               <NavigationMenu className="max-w-none *:w-full">
-                <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
+                <NavigationMenuList className="flex-col gap-0 items-start md:gap-2">
                   {navigationLinks.map((link, index) => (
                     <NavigationMenuItem key={index} className="w-full">
                       <NavigationMenuLink
@@ -81,7 +81,7 @@ export function Header() {
             </PopoverContent>
           </Popover>
           {/* Main nav */}
-          <div className="flex items-center gap-6">
+          <div className="flex gap-6 items-center">
             <Link href="/" className="text-primary hover:text-primary/90">
               <Logo />
             </Link>
@@ -104,16 +104,16 @@ export function Header() {
           </div>
         </div>
         {/* Right side */}
-        <div className="flex items-center gap-2">
+        <div className="flex gap-2 items-center">
           <Button asChild variant="ghost" size="sm" className="text-sm">
-            <Link href="#">Sign In</Link>
+            <Link href="#">Accedi</Link>
           </Button>
           <Button
             asChild
             size="sm"
             className="text-sm bg-brand hover:bg-brand/90"
           >
-            <Link href="#">Get Started</Link>
+            <Link href="#">Registrati</Link>
           </Button>
         </div>
       </div>

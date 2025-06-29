@@ -10,16 +10,18 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-5xl">
+    <>
       <Header />
-      <Hero />
-      <SocialProof />
-      <Features />
-      <Testimonials />
-      <Faq />
-      <Pricing />
-      <CTA />
+      <div className="mx-auto max-w-5xl">
+        <Hero />
+        <SocialProof />
+        <Features />
+        <Testimonials />
+        <Faq />
+        {/* <Pricing /> */}
+        <CTA />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

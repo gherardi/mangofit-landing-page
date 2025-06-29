@@ -90,8 +90,8 @@ export function Hero() {
             className="flex flex-col gap-2 justify-center items-center mt-12 md:flex-row"
           >
             <Button asChild size="lg" className="bg-brand hover:bg-brand/90">
-              <Link href="/login">
-                <span className="text-nowrap">Request a demo</span>
+              <Link href="#">
+                <span className="text-nowrap">Scopri come funziona</span>
               </Link>
             </Button>
           </AnimatedGroup>
