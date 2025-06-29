@@ -110,14 +110,14 @@ export function Hero() {
             ...transitionVariants,
           }}
         >
-          <div className="overflow-hidden relative px-2 mt-8 -mr-56 sm:mr-0 sm:mt-12 md:mt-20">
+          <div className="overflow-hidden relative px-2 mt-12 sm:mr-0 sm:mt-12 md:mt-20">
             <div
               aria-hidden
               className="bg-linear-to-b to-gray-50 absolute inset-0 z-10 from-transparent from-35%"
             />
             <div className="overflow-hidden relative p-4 mx-auto rounded-2xl border ring-1 shadow-lg inset-shadow-2xs ring-background bg-background shadow-zinc-950/15">
               <Image
-                className="relative rounded-2xl border z-2 border-border/25 aspect-15/8 dark:hidden"
+                className="relative rounded-2xl border z-2 border-border/25 aspect-15/8 w-full"
                 src="/overview.webp"
                 alt="app overview"
                 width="2700"

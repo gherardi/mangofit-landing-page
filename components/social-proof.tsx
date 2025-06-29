@@ -32,7 +32,7 @@ const companies = [
 export function SocialProof() {
   return (
     <section className="px-4 py-16 md:px-6">
-      <div className="py-8 pt-12 text-lg text-center">
+      <div className="py-8 pt-12 text-lg text-center text-muted-foreground">
         Utilizzato dai personal trainer delle migliori palestre
       </div>
       <div className="relative py-6 w-full">

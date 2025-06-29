@@ -36,27 +36,27 @@ const faqItems = [
     content:
       "Puoi cancellare il tuo abbonamento in qualsiasi momento dalle impostazioni del tuo account. L'accesso all'app rimarrà attivo fino alla fine del periodo di fatturazione.",
   },
-  {
-    title: "Quali metodi di pagamento accettate?",
-    content:
-      "Accettiamo pagamenti tramite carta di credito, PayPal e bonifico bancario. Tutte le transazioni sono sicure e protette.",
-  },
-  {
-    title:
-      "Cosa succede se supero il numero di utenti consentito dal mio piano?",
-    content:
-      "Se raggiungi il limite di utenti del tuo piano, il sistema riconoscerà automaticamente la transizione.",
-  },
-  {
-    title: "I dati dei miei clienti sono al sicuro su Mangofit?",
-    content:
-      "Assolutamente sì. Utilizziamo protocolli di sicurezza avanzati per proteggere tutte le informazioni sensibili. La privacy dei tuoi clienti è una nostra priorità.",
-  },
-  {
-    title: "Come faccio a invitare i miei clienti ad utilizzare Mangofit?",
-    content:
-      "Come personal trainer, puoi invitare facilmente i tuoi clienti a utilizzare Mangofit condividendo un link di invito tramite WhatsApp, email o altri canali. In questo modo, i tuoi clienti potranno registrarsi e accedere ai programmi di allenamento personalizzati e ai servizi che offri.",
-  },
+  // {
+  //   title: "Quali metodi di pagamento accettate?",
+  //   content:
+  //     "Accettiamo pagamenti tramite carta di credito, PayPal e bonifico bancario. Tutte le transazioni sono sicure e protette.",
+  // },
+  // {
+  //   title:
+  //     "Cosa succede se supero il numero di utenti consentito dal mio piano?",
+  //   content:
+  //     "Se raggiungi il limite di utenti del tuo piano, il sistema riconoscerà automaticamente la transizione.",
+  // },
+  // {
+  //   title: "I dati dei miei clienti sono al sicuro su Mangofit?",
+  //   content:
+  //     "Assolutamente sì. Utilizziamo protocolli di sicurezza avanzati per proteggere tutte le informazioni sensibili. La privacy dei tuoi clienti è una nostra priorità.",
+  // },
+  // {
+  //   title: "Come faccio a invitare i miei clienti ad utilizzare Mangofit?",
+  //   content:
+  //     "Come personal trainer, puoi invitare facilmente i tuoi clienti a utilizzare Mangofit condividendo un link di invito tramite WhatsApp, email o altri canali. In questo modo, i tuoi clienti potranno registrarsi e accedere ai programmi di allenamento personalizzati e ai servizi che offri.",
+  // },
 ];
 
 export function Faq() {
@@ -67,7 +67,7 @@ export function Faq() {
           Domande frequenti
         </h2>
       </div>
-      <Accordion type="single" collapsible className="mt-16 w-full" defaultValue="0">
+      <Accordion type="single" collapsible className="mt-16 w-full" defaultValue="10">
         {faqItems.map((item, index) => (
           <AccordionItem value={index.toString()} key={index} className="py-3">
             <AccordionTrigger className="py-2 text-lg leading-6 hover:no-underline">

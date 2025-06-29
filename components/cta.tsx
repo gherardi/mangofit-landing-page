@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export function CTA() {
   return (
-    <section className="px-4 py-12 md:px-6 md:py-24">
+    <section className="px-4 py-12 pb-24 md:px-6 md:py-24">
       <div className="mx-auto text-center text-balance">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Trasforma il tuo business.
           <br />
           Inizia con Mangofit oggi.
         </h2>
-        <p className="mx-auto mt-6 text-lg leading-8">
+        <p className="mx-auto mt-4 md:mt-6">
           Unisciti ai personal trainer che hanno già semplificato il loro lavoro
           quotidiano, ottimizzato le attività e mantenuto i clienti motivati con
           la nostra piattaforma completa.
