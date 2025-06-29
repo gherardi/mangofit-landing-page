@@ -4,7 +4,7 @@ import { SocialProof } from "@/components/social-proof";
 import { Features } from "@/components/features";
 import { Testimonials } from "@/components/testimonials";
 import { Faq } from "@/components/faq";
-import { Pricing } from "@/components/pricing";
+// import { Pricing } from "@/components/pricing";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 
