@@ -1,5 +1,5 @@
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
+import { Header } from "@/components/header-originui";
+import { Hero } from "@/components/hero-old";
 import { SocialProof } from "@/components/social-proof";
 import { Features } from "@/components/features";
 import { Testimonials } from "@/components/testimonials";
@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-5xl mx-auto">
       <Header />
       <Hero />
       <SocialProof />
