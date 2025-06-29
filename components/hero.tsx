@@ -39,7 +39,7 @@ export function Hero() {
               <span className="text-sm text-foreground">
                 La soluzione digitale per i Personal Trainer
               </span>
-              <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+              <span className="dark:border-background block h-4 w-0.5 border-l bg-background"></span>
 
               <div className="overflow-hidden rounded-full duration-500 bg-background group-hover:bg-muted size-6">
                 <div className="flex w-12 duration-500 ease-in-out -translate-x-1/2 group-hover:translate-x-0">
@@ -58,7 +58,7 @@ export function Hero() {
             preset="fade-in-blur"
             speedSegment={0.3}
             as="h1"
-            className="mt-6 text-balance text-5xl md:text-7xl lg:mt-12"
+            className="mt-6 text-5xl text-balance md:text-7xl lg:mt-12"
           >
             Il Software che semplifica il lavoro dei Personal Trainer
           </TextEffect>
@@ -113,7 +113,7 @@ export function Hero() {
           <div className="overflow-hidden relative px-2 mt-8 -mr-56 sm:mr-0 sm:mt-12 md:mt-20">
             <div
               aria-hidden
-              className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
+              className="bg-linear-to-b to-gray-50 absolute inset-0 z-10 from-transparent from-35%"
             />
             <div className="overflow-hidden relative p-4 mx-auto rounded-2xl border ring-1 shadow-lg inset-shadow-2xs ring-background bg-background shadow-zinc-950/15">
               <Image

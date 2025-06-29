@@ -49,9 +49,9 @@ const features = [
 
 export function Features() {
   return (
-    <section className="px-4 md:px-6 py-12 md:py-24">
+    <section className="px-4 py-12 md:px-6 md:py-24">
       <div className="relative z-10 mx-auto space-y-4 text-center md:space-y-8">
-        <h2 className="text-balance text-4xl font-medium lg:text-5xl">
+        <h2 className="text-4xl font-medium text-balance lg:text-5xl">
           La soluzione digitale per i Personal Trainer
         </h2>
         <p className="text-balance">
@@ -61,13 +61,13 @@ export function Features() {
         </p>
       </div>
 
-      <div className="relative mx-auto grid divide-x divide-y border *:p-12 sm:grid-cols-2 lg:grid-cols-3 mt-16">
+      <div className="relative grid divide-x divide-y border *:p-12 sm:grid-cols-2 lg:grid-cols-3 mt-16 bg-background">
         {features.map((feature, index) => {
           const IconComponent = feature.icon;
           return (
             <div key={index} className="space-y-3">
               <IconComponent className="size-4 stroke-brand" />
-              <div className="flex items-center gap-2">
+              <div className="flex gap-2 items-center">
                 <h3 className="font-medium">{feature.title}</h3>
               </div>
               <p className="text-sm">{feature.description}</p>
